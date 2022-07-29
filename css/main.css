@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none
+}
+
+html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #222;
+
+    font-family: "Source Sans Pro", sans-serif;
+    color: #fff;
+    font-size: 14pt;
+    text-align: center;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.btn-open {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.btn-open>p {
+    line-height: 1.6;
+}
+
+.modal {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    border-radius: .2em;
+}
+
+.btn {
+    position: absolute;
+    background-image: url('../static/img/sui_pfp.jpg');
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.modal .inside {
+    opacity: 0;
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 2em;
+    text-align: center;
+    font-family: Ubuntu;
+
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.inside p {
+    margin: 0
+}
+
+#modalToggle:checked~.modal .btn-open {
+    animation-name: btnExpand;
+}
+
+#modalToggle:checked~.modal .inside {
+    display: block;
+    animation-name: delayedFadeIn;
+}
+
+.btn-open::before,
+.btn-open::after {
+    position: absolute;
+    content: "";
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+    border-radius: 50%;
+    opacity: 0.5;
+    filter: blur(60px);
+}
+
+
+.btn-open::after {
+    background-color: #00ffff;
+    z-index: -2;
+    animation: backglow2 15s ease infinite;
+}
+
+.btn-open::before {
+    background-color: #ff0072;
+    z-index: -1;
+    animation: backglow1 15s ease infinite;
+}
+
+.social-btn {
+    flex: 1 1 auto;
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 3px #eee;
+    border-radius: 10px;
+}
+
+.social-btn:hover {
+    background-position: right center;
+}
+
+.btn-gh {
+    background-image: linear-gradient(to right, #343434 0%, #000000 51%, #343434 100%);
+}
+
+.btn-yt {
+    background-image: linear-gradient(to right, #ED213A 0%, #93291E 51%, #ED213A 100%);
+}
+
+.btn-tw {
+    background-image: linear-gradient(to right, #E100FF 0%, #7F00FF 51%, #E100FF 100%)
+}
+
+@keyframes backglow1 {
+
+    0% {
+        transform: translate(10%, 10%) scale(1);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translate(-10%, 10%) scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translate(-10%, -10%) scale(1.2);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translate(10%, -10%) scale(1.1);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translate(10%, 10%) scale(1);
+        opacity: 0.5;
+    }
+
+
+}
+
+@keyframes backglow2 {
+
+    0% {
+        transform: translate(-10%, -10%) scale(1);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translate(10%, -10%) scale(0.8);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translate(10%, 10%) scale(1.2);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translate(-10%, 10%) scale(1.1);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translate(-10%, -10%) scale(1);
+        opacity: 0.5;
+    }
+
+
+}
+
+@keyframes btnExpand {
+    15% {
+        color: transparent;
+    }
+
+    35% {
+        width: 3em;
+        height: 3em;
+        border-radius: 9999px;
+        margin: 0;
+    }
+
+    55% {
+        background-image: none;
+        width: 9999px;
+        height: 9999px;
+        border-radius: 9999px;
+        color: transparent;
+        display: none;
+    }
+
+    to {
+        background-image: none;
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        color: transparent;
+        display: none;
+    }
+}
+
+@keyframes delayedFadeIn {
+    from {
+        opacity: 0
+    }
+
+    55% {
+        opacity: 0
+    }
+
+    65% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 1
+    }
+}
