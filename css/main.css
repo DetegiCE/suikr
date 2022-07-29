@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Ubuntu&display=swap');
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: Ubuntu, "Gowun Dodum";
 }
 
 a {
@@ -15,7 +16,6 @@ a {
 html {
     position: relative;
     width: 100%;
-    height: 100%;
     background: #222;
 
     font-family: "Source Sans Pro", sans-serif;
@@ -29,7 +29,6 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -50,6 +49,9 @@ body {
     background: transparent;
     overflow: hidden;
     border-radius: .2em;
+
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .btn {
@@ -84,7 +86,6 @@ body {
 
     padding: 2em;
     text-align: center;
-    font-family: Ubuntu;
 
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -96,6 +97,10 @@ body {
 
 #modalToggle:checked~.modal .btn-open {
     animation-name: btnExpand;
+}
+
+#modalToggle:checked~.modal {
+    animation-name: modalExpand;
 }
 
 #modalToggle:checked~.modal .inside {
@@ -156,6 +161,70 @@ body {
 
 .btn-tw {
     background-image: linear-gradient(to right, #E100FF 0%, #7F00FF 51%, #E100FF 100%)
+}
+
+.subtitles {
+    text-align: left;
+}
+
+#history-1,
+#history-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 10px 0 rgba(black, .15);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.card-img {
+    padding-bottom: 56.25%;
+    position: relative;
+    text-align: center;
+}
+
+.card-img img {
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-weight: 700;
+}
+
+.card-intro {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.card-duration {
+    font-size: 0.8rem;
+    text-align: center;
+    color: gray;
 }
 
 @keyframes backglow1 {
@@ -246,6 +315,16 @@ body {
         border-radius: 0;
         color: transparent;
         display: none;
+    }
+}
+
+@keyframes modalExpand {
+    from {
+        overflow: hidden;
+    }
+
+    to {
+        overflow: auto;
     }
 }
 
