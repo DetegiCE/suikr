@@ -550,6 +550,79 @@ body {
     color: gray;
 }
 
+.social-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-item {
+    width: 5.5em;
+    height: 5.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+    margin: 0.5em;
+    color: white;
+
+}
+
+.social-item span {
+    font-size: 2.5em;
+    transition: all 1s ease-out;
+}
+
+.social-item:hover span {
+    font-size: 3em;
+}
+
+.social-phone {
+    background-image: linear-gradient(45deg, #38ef7d 0%, #11998e 100%);
+}
+
+.social-mail {
+    background-image: linear-gradient(45deg, #F05335 0%, #F21390 100%);
+}
+
+.social-gh {
+    background-image: linear-gradient(45deg, #232526 0%, #414345 100%);
+}
+
+.social-fb {
+    background-image: linear-gradient(45deg, #4092C9 0%, #404AC9 100%);
+}
+
+.social-ins {
+    background-image: linear-gradient(45deg, #FFDC80 0%, #F77737 25%, #E1306C 50%, #833AB4 75%, #405DE6 100%);
+}
+
+.social-yt {
+    background-image: linear-gradient(45deg, #E82C0C 0%, #E80C7A 100%);
+}
+
+.social-twc {
+    background-image: linear-gradient(45deg, #8E40BD 0%, #4A40BD 100%);
+}
+
+.fass {
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, .9));
+}
+
+.contact-simple-text {
+    text-align: left;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    padding: 1rem;
+}
 
 @keyframes backglow1 {
 
