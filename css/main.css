@@ -490,6 +490,67 @@ body {
     flex-wrap: wrap;
 }
 
+.school-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-item {
+    display: grid;
+    grid-template-rows: 3rem 2rem 2rem;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 20px;
+}
+
+.school-item:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+
+.school-image {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.school-image img {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 50%;
+}
+
+.school-name,
+.school-year,
+.school-major {
+    text-align: left;
+}
+
+.school-city {
+    margin: 5px;
+    font-size: 80%;
+}
+
+.school-link {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size .25s ease-in, color .25s ease-in;
+    text-decoration: none;
+    color: inherit;
+}
+
+.school-link:hover {
+    background-size: 100% 100%;
+    color: black;
+}
+
+.school-year {
+    color: gray;
+}
+
+
 @keyframes backglow1 {
 
     0% {
