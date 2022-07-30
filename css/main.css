@@ -434,6 +434,62 @@ body {
     color: #43B02A;
 }
 
+.cert-wide {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4.5fr;
+    grid-template-rows: 60px 30px 30px 30px 15px;
+    grid-auto-flow: dense;
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0.5rem;
+
+    position: relative;
+    background: white;
+    color: black;
+    box-shadow: 0px 3px 15px rgb(251, 251, 251, .8);
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+.cert-image {
+    padding: 30px 20px 20px;
+    grid-row: 1/5;
+    grid-column: 1/2;
+}
+
+.cert-image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 4px purple;
+    object-fit: cover;
+}
+
+.cert-name {
+    grid-row: 1/1;
+    grid-column: 2/4;
+    padding: 20px 20px 10px 0;
+    align-self: center;
+}
+
+.cert-stat-title {
+    color: gray;
+    font-size: 16px;
+    align-self: center;
+}
+
+.cert-stat-info {
+    align-self: center;
+}
+
+.cert-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 @keyframes backglow1 {
 
     0% {
