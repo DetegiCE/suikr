@@ -308,7 +308,7 @@ body {
 
 .badge {
     position: relative;
-    margin: 0.75em 0.9em;
+    margin: 0.75em 1.2em;
     width: 2em;
     height: 3.1em;
     border-radius: 5px;
@@ -363,15 +363,16 @@ body {
 .badge .ribbon {
     position: absolute;
     border-radius: 42px;
-    padding: 2.5px 2.5px 2px;
-    width: 70px;
+    padding: 2.5px 2.5px;
+    width: 80px;
     z-index: 11;
     color: white;
-    bottom: 6px;
+    bottom: 4px;
     left: 50%;
-    margin-left: -34.5px;
-    height: 15px;
-    font-size: 7px;
+    margin-left: -39.5px;
+    height: 1.1rem;
+    margin-top: 1.2rem;
+    font-size: 0.7rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .27);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     text-transform: uppercase;
