@@ -62,6 +62,18 @@ body {
     animation-fill-mode: forwards;
 }
 
+.rhythmsection {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+
+    padding: 2em;
+    text-align: center;
+}
+
 .btn {
     position: absolute;
     background-image: url('../static/img/sui_pfp.jpg');
@@ -507,7 +519,7 @@ body {
 .school-item {
     display: grid;
     grid-template-rows: 3rem 2rem 2rem 0.5rem;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr 1fr;
     margin-bottom: 20px;
 }
 
@@ -521,6 +533,11 @@ body {
     align-self: center;
 }
 
+.school-sub-image {
+    grid-row: 1/5;
+    grid-column: 3/4;
+}
+
 .school-image img {
     width: 5rem;
     height: 5rem;
@@ -528,10 +545,25 @@ body {
     border-radius: 50%;
 }
 
+.school-sub-image img {
+    height: 5rem;
+    background: white;
+}
+
 .school-name,
 .school-year,
 .school-major {
     text-align: left;
+}
+
+.school-year {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.school-major {
+    grid-row: 3/4;
+    grid-column: 2/3;
 }
 
 .school-city {
@@ -558,10 +590,22 @@ body {
     color: gray;
 }
 
+.wacca-stage-img {
+    height: 100%;
+    margin-bottom: -13px;
+    padding: 0;
+}
+
 .social-wrap {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.social-wrap-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .social-item {
@@ -613,6 +657,14 @@ body {
     background-image: linear-gradient(45deg, #8E40BD 0%, #4A40BD 100%);
 }
 
+.social-tw {
+    background-image: linear-gradient(45deg, #0FC3DB 0%, #0F57DB 100%);
+}
+
+.social-stm {
+    background-image: linear-gradient(45deg, #22424F 0%, #222A4F 100%);
+}
+
 .fass {
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, .9));
 }
@@ -630,6 +682,42 @@ body {
 
 .copyright {
     padding: 1rem;
+}
+
+.glitch-text-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+.glitch-text-link::before,
+.glitch-text-link::after {
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.glitch-text-link::before {
+    color: #00ffff;
+    z-index: -1;
+}
+
+.glitch-text-link::after {
+    color: #ff00ff;
+    z-index: -2;
+}
+
+.glitch-text-link:hover::before {
+    animation: glitchy .3s ease .3s infinite;
+}
+
+.glitch-text-link:hover::after {
+    animation: glitchy .3s ease infinite reverse;
 }
 
 @keyframes backglow1 {
@@ -748,5 +836,27 @@ body {
 
     to {
         opacity: 1
+    }
+}
+
+@keyframes glitchy {
+    0% {
+        transform: translate(-2px, 2px);
+    }
+
+    25% {
+        transform: translate(-2px, -2px);
+    }
+
+    50% {
+        transform: translate(2px, 2px);
+    }
+
+    75% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(-2px, 2px);
     }
 }
