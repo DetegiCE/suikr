@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Ubuntu&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: Ubuntu, "Gowun Dodum";
+    font-family: Ubuntu, "Gowun Batang";
 }
 
 a {
@@ -30,6 +30,14 @@ body {
     left: 0;
     width: 100%;
     margin: 0;
+}
+
+.intro-job {
+    font-weight: 700;
+}
+
+.intro-name {
+    font-size: 130%;
 }
 
 .btn-open {
@@ -245,7 +253,7 @@ body {
     border-left: 8px solid #1f2024;
 
     padding: 15px;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     text-align: left;
     transition: all .5s;
