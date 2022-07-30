@@ -506,7 +506,7 @@ body {
 
 .school-item {
     display: grid;
-    grid-template-rows: 3rem 2rem 2rem;
+    grid-template-rows: 3rem 2rem 2rem 0.5rem;
     grid-template-columns: 1fr 5fr;
     margin-bottom: 20px;
 }
