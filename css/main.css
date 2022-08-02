@@ -543,16 +543,6 @@ body {
     height: 5rem;
     background: white;
     border-radius: 50%;
-    overflow: hidden;
-}
-
-.school-image-scale {
-    transform: scale(1);
-    transition: all 1s ease-in-out;
-}
-
-.school-image-scale:hover {
-    transform: scale(1.2);
 }
 
 .school-sub-image img {
