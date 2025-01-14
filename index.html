@@ -1205,7 +1205,7 @@
             <hr>
 
             <footer class="footer">
-                <p class="copyright">&copy; 2022 - 2024. Ryubin Kim (
+                <p class="copyright">&copy; 2022 - <span id="currentYear"></span>. Ryubin Kim (
                     <!-- <a href="./rhythm.html" data-content="SUI Sensei™" class="glitch-text-link"> -->
                     SUI Sensei™
                     <!-- </a> -->
@@ -1216,6 +1216,7 @@
     </section>
 
     <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
         $(function () {
             $("dt").click(function () {
                 $(this).toggleClass("open");
