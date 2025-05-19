@@ -533,6 +533,16 @@ body {
     object-fit: cover;
 }
 
+.cert-image2 {
+    padding: 30px 20px 20px;
+    grid-row: 1/5;
+    grid-column: 1/2;
+}
+
+.cert-image2 img {
+    width: 90px;
+    object-fit: cover;
+}
 .cert-name {
     grid-row: 1/1;
     grid-column: 2/4;
