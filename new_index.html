@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ryubin Kim (Sui Sensei)">
+    <meta name="description" content="Welcome to Ryubin Kim (Sui Sensei) page">
+    <meta property="og:image" content="http://sui.kr/static/img/sui_pfp.jpg">
+    <meta property="og:title" content="Sui Sensei Page">
+    <meta property="og:description" content="Welcome to Ryubin Kim (Sui Sensei) page">
+    <title>Hello!</title>
+    <link rel="stylesheet" href="css/new_main.css">
+    <link rel="stylesheet" href="css/textview.css">
+    <link rel="shortcut icon" href="static/favicon/sui_pfp.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHSGNBCJ5N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZHSGNBCJ5N');
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"></script>
+</head>
+
+<body>
+    <!-- 주의!!! 배포 전 반드시 checked 지우기!!! -->
+    <input id="modalToggle" class="hide" type="checkbox" checked>
+    <section class="modal">
+        <div class="outside">
+            <label class="btn btn-open" for="modalToggle">
+            </label>
+        </div>
+
+        <div class="inside">
+            <h1>안녕하세요!</h1>
+            <hr>
+            <blockquote>
+                다른 사람에게 더 많은 지식을 전달하기 위해
+                <br> 더 많은 공부를 하는
+                <span class="intro-job">개발자 선생님 <span class="intro-name">김 류 빈</span></span> 입니다. 🌱
+            </blockquote>
+            <hr>
+
+            <h2 class="subtitles">강의 경력</h2>
+            <div class="badge-wrapper">
+                <h3>강의 가능 과목</h3>
+                <div class="badge b-html">
+                    <div class="circle">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="ribbon">
+                        HTML
+                    </div>
+                </div>
+                <div class="badge b-css3">
+                    <div class="circle">
+                        <i class="fa-brands fa-css3"></i>
+                    </div>
+                    <div class="ribbon">
+                        CSS
+                    </div>
+                </div>
+                <div class="badge b-js">
+                    <div class="circle">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="ribbon">
+                        JavaScript
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="circle">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="65%">
+                            <title>C++</title>
+                            <path
+                                d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.11-7.11a7.133 7.133 0 016.156 3.553l-3.076 1.78a3.567 3.567 0 00-3.08-1.78A3.56 3.56 0 008.444 12 3.56 3.56 0 0012 15.555a3.57 3.57 0 003.08-1.778l3.078 1.78A7.135 7.135 0 0112 19.11zm7.11-6.715h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79zm2.962 0h-.79v.79h-.79v-.79h-.79v-.79h.79v-.79h.79v.79h.79z" />
+                        </svg>
+                    </div>
+                    <div class="ribbon">
+                        C/C++
+                    </div>
+                </div>
+                <div class="badge b-java">
+                    <div class="circle">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="ribbon">
+                        Java
+                    </div>
+                </div>
+                <div class="badge b-py">
+                    <div class="circle">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="ribbon">
+                        Python
+                    </div>
+                </div>
+                <div class="badge b-block">
+                    <div class="circle">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="65%">
+                            <title>Scratch</title>
+                            <path
+                                d="M11.406 11.312c-.78-.123-1.198-.654-.99-2.295l.023-.198c.175-1.426.321-1.743.996-1.706.198.013.426.14.654.33.211.247.68.568.945 1.204.19.466.254.77.281 1.098l.042.402v-.002a.68.68 0 0 0 1.342-.007c.008-.044.176-4.365.176-4.436 0-.38-.302-.69-.68-.696a.685.685 0 0 0-.682.688c0 .009-.001.605-.014 1.206-.536-.592-1.223-1.123-1.994-1.17-2.058-.11-2.283 1.811-2.419 2.918l-.02.196c-.278 2.189.441 3.569 2.13 3.837 1.838.293 3.063.72 3.074 1.868.007.446-.224.903-.627 1.254a2.163 2.163 0 0 1-1.749.507 3.233 3.233 0 0 1-.539-.141c-.24-.136-.847-.51-1.154-.942-.26-.364-.35-.937-.378-1.3.004-.163.005-.27.005-.283a.69.69 0 0 0-.669-.703.689.689 0 0 0-.696.682c0 .013-.017 1.367-.066 2.183-.07 1.313 0 2.426 0 2.474.028.382.35.67.727.644a.681.681 0 0 0 .635-.733c0-.006-.033-.545-.029-1.29a5.21 5.21 0 0 0 1.938.773 3.451 3.451 0 0 0 2.856-.82c.713-.619 1.122-1.464 1.11-2.32-.024-2.555-2.865-3.004-4.228-3.222M14.174 0a5.51 5.51 0 0 0-2.724.723h-.112c-2.637 0-4.937 1.392-6.15 3.728-.728 1.393-.9 2.75-.999 3.579-.012.089-.018.17-.028.262-.12.974-.123 1.904-.01 2.772a5.824 5.824 0 0 0-.625 2.529v.016a58.919 58.919 0 0 1-.057 1.95 29.72 29.72 0 0 0-.008 2.94l.013.209C3.698 21.676 6.159 24 9.083 24a5.516 5.516 0 0 0 3.463-1.21 8.357 8.357 0 0 0 5.195-2.08c1.826-1.587 2.859-3.845 2.83-6.19-.013-1.362-.346-2.638-.978-3.763.117-1.273.221-4.996.221-5.03 0-3.103-2.484-5.67-5.539-5.727zm.056 2.675c1.642.03 2.978 1.412 2.978 3.081 0 .038-.145 4.497-.215 4.883a3.152 3.152 0 0 1-.203.69c.756.89 1.165 2 1.175 3.256.021 1.555-.681 3.076-1.926 4.16a5.763 5.763 0 0 1-3.8 1.444 5.986 5.986 0 0 1-.718-.048 3.386 3.386 0 0 1-.172.215 2.97 2.97 0 0 1-2.264 1.038c-1.573 0-2.897-1.255-3.013-2.856l-.008-.122a27.366 27.366 0 0 1 .005-2.662c.039-.679.06-1.831.062-2.08a3.124 3.124 0 0 1 .783-2.025c-.237-.835-.312-1.836-.167-3.02l.024-.212c.083-.695.208-1.72.72-2.7.765-1.473 2.168-2.318 3.848-2.318a4.568 4.568 0 0 1 .824.07c.546-.5 1.27-.81 2.067-.794Z" />
+                        </svg>
+                    </div>
+                    <div class="ribbon">
+                        블록코딩
+                    </div>
+                </div>
+                <div class="badge b-sql">
+                    <div class="circle">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="ribbon">
+                        SQL
+                    </div>
+                </div>
+                <div class="badge b-algo">
+                    <div class="circle">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="ribbon">
+                        알고리즘
+                    </div>
+                </div>
+                <div class="badge b-math">
+                    <div class="circle">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="ribbon">
+                        이산수학
+                    </div>
+                </div>
+            </div>
+            <div id="history-1">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/megait.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            메가스터디 SW입시센터
+                        </h2>
+                        <p class="card-duration">2023년 3월 ~ 2023년 12월<br>2024년 8월 ~ (재직 중)</p>
+                        <p class="card-intro">
+                            SW 입시
+                            <br> 포트폴리오 대회 준비반
+                            <br> 알고리즘 대회 준비반
+                            <br> (정올, 대학별 대회)
+                            <br> 대상: 중학생~고등학생
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/koreait.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            코리아IT아카데미 강남
+                        </h2>
+                        <p class="card-duration">2023년 12월 ~ 2024년 12월</p>
+                        <p class="card-intro">
+                            프로그래밍학과 강사
+                            <br> 기초 프로그래밍 언어 (C, C++, Java, Python, C#)
+                            <br> 빅데이터 (R분석)
+                            <br> 대상: 성인
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/sbsarts.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            SBS아카데미컴퓨터아트학원 종로캠퍼스
+                        </h2>
+                        <p class="card-duration">2022년 8월 ~ 2024년 12월</p>
+                        <p class="card-intro">
+                            웹학과 강사
+                            <br> 웹 (HTML, CSS, JS, JQuery), 웹포폴
+                            <br> 기초 프로그래밍 언어 (C, C++, Java, Python)
+                            <br> 대상: 중~고등학생, 성인
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/daekun.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            대건정보처리학원
+                        </h2>
+                        <p class="card-duration">2022년 4월 ~ 2023년 11월</p>
+                        <p class="card-intro">
+                            정보올림피아드, 알고리즘
+                            <br> 프로그래밍 언어
+                            <br> 웹 개발, 자격증
+                            <br> 블록코딩 (엔트리, 스크래치)
+                            <br> 대상: 초등학생~대학생, 일반인
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/megait.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            메가스터디IT아카데미 신촌캠퍼스
+                        </h2>
+                        <p class="card-duration">2021년 4월 ~ 2022년 12월</p>
+                        <p class="card-intro">
+                            특성화IT고등학교 입시반
+                            <br> (엔트리, Python, 웹 개발)
+                            <br> Python 단과반
+                            <br> 대상: 중학생~대학생, 일반인
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/unit.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            유닛소프트코딩학원
+                        </h2>
+                        <p class="card-duration">2019년 5월 ~ 2021년 12월</p>
+                        <p class="card-intro">
+                            정보올림피아드, 알고리즘
+                            <br> 이산수학, 인공지능
+                            <br> 컨텐츠 개발(교재, 영상) 팀장
+                            <br> 대상: 초등학생~대학생, 일반인
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h2>직업능력개발훈련교사</h2>
+            <div class="cert-wrap">
+                <div class="teacher-cert-wide">
+                    <div class="teacher-cert-name">
+                        <h3>정보기술개발 (200102)</h3>
+                    </div>
+                    <p class="cert-stat-title">등급</p>
+                    <h5 class="cert-stat-info">3급</h5>
+                    <p class="cert-stat-title">발급일</p>
+                    <h5 class="cert-stat-info">2024. 12. 06.</h5>
+                    <p class="cert-stat-title">고유번호</p>
+                    <h5 class="cert-stat-info">교사3급-제***21호</h5>
+                </div>
+                <div class="teacher-cert-wide">
+                    <div class="teacher-cert-name">
+                        <h3>정보기술운영관리 (200103)</h3>
+                    </div>
+                    <p class="cert-stat-title">등급</p>
+                    <h5 class="cert-stat-info">3급</h5>
+                    <p class="cert-stat-title">발급일</p>
+                    <h5 class="cert-stat-info">2024. 12. 06.</h5>
+                    <p class="cert-stat-title">고유번호</p>
+                    <h5 class="cert-stat-info">교사3급-제***22호</h5>
+                </div>
+            </div>
+            <div class="badge-wrapper ncs-badge-wrapper">
+                <h3>국가직무능력표준 (NCS) 확인강사 등록</h3>
+                <div class="badge b-math">
+                    <div class="ribbon2">
+                        <b>020203</b><br>일반사무
+                    </div>
+                </div>
+                <div class="badge b-js">
+                    <div class="ribbon2">
+                        <b>080301</b><br>문화콘텐츠기획
+                    </div>
+                </div>
+                <div class="badge b-js">
+                    <div class="ribbon2">
+                        <b>080302</b><br>문화콘텐츠제작
+                    </div>
+                </div>
+                <div class="badge b-html">
+                    <div class="ribbon2">
+                        <b>090201</b><br>철도운전운영
+                    </div>
+                </div>
+                <div class="badge b-css3">
+                    <div class="ribbon2">
+                        <b>190311</b><br>3D프린터개발
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="ribbon2">
+                        <b>200101</b><br>정보기술전략·계획
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="ribbon2">
+                        <b>200102</b><br>정보기술개발
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="ribbon2">
+                        <b>200103</b><br>정보기술운영
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="ribbon2">
+                        <b>200202</b><br>무선통신구축
+                    </div>
+                </div>
+                <div class="badge b-c">
+                    <div class="ribbon2">
+                        <b>200203</b><br>통신서비스
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="subtitles">실무 경력</h2>
+            <div id="history-2">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/kitpa_new.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            한국정보기술진흥원
+                        </h2>
+                        <p class="card-duration">2023년 5월 ~</p>
+                        <p class="card-intro">
+                            개발팀 수석연구원
+                            <br>웹/데이터/인공지능
+                            <br>대외 세미나 진행
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/smcnc.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            SM C&C
+                        </h2>
+                        <p class="card-duration">2024년 9월 ~ 2024년 12월</p>
+                        <p class="card-intro">
+                            콘텐츠제작기획팀
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="static/img/ridi.png">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            리디 주식회사
+                        </h2>
+                        <p class="card-duration">2021년 6월 ~ 2022년 3월</p>
+                        <p class="card-intro">
+                            SRE팀 인프라 엔지니어
+                            <br> 리디북스/리디셀렉트 서버 유지보수 및 개발
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="subtitles">학력</h2>
+            <div class="school-wrap">
+                <div class="school-item">
+                    <div class="school-image">
+                        <img src="static/img/school/korea.jpg">
+                    </div>
+                    <div class="school-name">
+                        <h3>
+                            <a class="school-link" href="https://cs.korea.ac.kr/cs/index.do" target="_blank">고려대학교</a>
+                            <span class="school-city">서울</span>
+                        </h3>
+                    </div>
+                    <p class="school-year">2019. 03. ~ (재학 중)</p>
+                    <p class="school-major" style="line-height: 120%">전공 Computer Science and Engineering<br>제2전공
+                        Interdisciplinary Digital Humanities</p>
+                </div>
+                <div class="school-item">
+                    <div class="school-image">
+                        <img src="static/img/school/gsa.png">
+                    </div>
+                    <div class="school-name">
+                        <h3>
+                            <a class="school-link" href="http://gsa.gen.hs.kr/main/main.php" target="_blank">과학영재학교
+                                광주과학고등학교</a>
+                            <span class="school-city">광주</span>
+                        </h3>
+                    </div>
+                    <p class="school-year">2016. 02. ~ 2019. 01. (졸업)</p>
+                    <p class="school-major">Computer Science 전공 / Chemistry 부전공</p>
+                </div>
+            </div>
+
+            <h2 class="subtitles">대회 참여 및 수상 내역</h2>
+            <dl class="award-list">
+                <dt class="award-title">
+                    <span class="award-date">2023. 12.</span>
+                    2023 INU 코드 페스티벌
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">장려상</span>인천대학교
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2023. 11.</span>
+                    2023 제17회 i-TOP경진대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">한국생산성본부 회장상</span>한국생산성본부
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2022. 09.</span>
+                    2022 Woori 코딩 페스티벌
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">특별상</span>우리FIS
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2022. 08.</span>
+                    제 8회 Samsung Collegiate Programming Cup (SCPC)
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">Round 2 진출</span>삼성전자
+                    <br> 제 8회 삼성전자 대학생 프로그래밍 대회
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2022. 07.</span>
+                    쇼미더코드 : 원티드 주관 코딩테스트 대회 22년 2회차
+                </dt>
+                <dd class="award-content"><span class="award-info">
+                        금손 등급 (1등급)</span>원티드 주식회사
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2020. 08.</span>
+                    제 6회 Samsung Collegiate Programming Cup (SCPC)
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">Round 2 진출</span>삼성전자
+                    <br> 제 6회 삼성전자 대학생 프로그래밍 대회
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2020. 07.</span>
+                    2020 전국 대학생 프로그래밍 대회 (UCPC)
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">본선 진출</span>
+                    전국 대학생 프로그래밍대회 동아리 연합
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2019. 12.</span>
+                    고려대학교 정보대학 웹 프로그래밍 경진대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">으뜸상 (1등, 300,000원)</span>
+                    고려대학교 소프트웨어중심대학
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2018. 08.</span>
+                    제 3회 국민대학교알고리즘대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">장려상</span>
+                    국민대학교
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2017. 12.</span>
+                    제 15회 임베디드소프트웨어경진대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">우수상 (2등)</span>
+                    임베디드소프트웨어·시스템산업협회
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2017. 11.</span>
+                    2017 소셜벤처아이디어경연대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">LG혁신인재상</span>
+                    한국사회적기업진흥원
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2017. 01.</span>
+                    한국천문올림피아드 겨울학교
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">예비 국가대표</span>
+                    한국천문학회
+                </dd>
+                <dt class="award-title">
+                    <span class="award-date">2016 ~ 2018</span>
+                    한국정보올림피아드 경시대회
+                </dt>
+                <dd class="award-content">
+                    <span class="award-info">2016</span>장려상 <br>
+                    <span class="award-info">2017</span>동상 <br>
+                    <span class="award-info">2018</span>동상
+                </dd>
+            </dl>
+
+            <h2 class="subtitles">자격증</h2>
+            <div class="cert-wrap">
+                <div class="cert-wide" cert-filter="2025 aws ai">
+                    <div class="cert-image2">
+                        <a
+                            href="https://www.credly.com/badges/d2aeea2b-af77-4b90-ba58-9c225d9f3bc5/public_url">
+                            <img src="static/img/cert/aws-aif-c01.png" style="border: none; box-shadow: none;">
+                        </a>
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px;">AWS AI Practitioner Foundational</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 19.<br><small>만료일 2028. 05. 19.</small></h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">Amazon Web Service</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****5140</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(전북)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 16.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****2943</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(충북)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 16.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****2901</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(충남)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 16.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****2826</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(광주)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 14.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****2538</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px">제1급아마추어무선기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 13.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0006</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(울산)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 09.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1503</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(강원)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 09.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1457</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(부산)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 05. 09.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1394</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px; line-height: 24px;">제3급아마추어무선기사(전신급)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 01. 14.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0004</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>해상무선통신사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 01. 14.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0007</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(대전)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 01. 07.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****5583</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2025 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(인천)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2025. 01. 07.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****5487</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>택시운전자격(서울)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 12. 30.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****4613</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 kcci business">
+                    <div class="cert-image">
+                        <img src="static/img/cert/korcham.jpeg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>전자상거래관리사 2급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 12. 03.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">대한상공회의소</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0023</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 kcci business">
+                    <div class="cert-image">
+                        <img src="static/img/cert/korcham.jpeg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>전자상거래운용사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 12. 03.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">대한상공회의소</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0005</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 hrdk electronic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px;">로봇소프트웨어개발기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 11. 20.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****002F</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 hrdk electronic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px;">전자계산기제어산업기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 06. 18.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****210U</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>항공무선통신사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 06. 04.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0236</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 ybm sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/cospro.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>COS PRO C# 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 05. 04.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">YBM</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0229</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 kfsi safety">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kfsi.jpg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>위험물운반자</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 05. 03.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국소방안전원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0179</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 kpc sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ieq.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>IEQ(인터넷윤리자격)</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">지도사 2024. 05. 02.<br><small>만료일 2029. 05. 02.</small></h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****5782</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2024 ts traffic">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>도로교통안전관리자</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2024. 04. 24.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****2722</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 icqa hw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/icqa.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>PC정비사 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 12. 19.<br><small>만료일 2028. 12. 18.</small></h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국정보통신자격협회</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****5906</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk architect">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>건축도장기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 12. 13.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****379A</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ms ai">
+                    <div class="cert-image2">
+                        <a
+                            href="https://learn.microsoft.com/api/credentials/share/ko-kr/RyubinKim-9361/9EE4D9463F4A68B3?sharingId=A33DF27045C1744C">
+                            <img src="static/img/cert/ms-ai-900.png" style="border: none; box-shadow: none;">
+                        </a>
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -2px;">Azure AI Fundamentals</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 11. 30.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">Microsoft</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****7A0D</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>전파전자통신기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 11. 16.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0558</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>정보처리기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 11. 15.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****819P</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk photo">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>항공사진기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 09. 13.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****434X</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk 3dprint">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>3D프린터운용기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 09. 13.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****016J</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>사무자동화산업기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 09. 01.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****039Y</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 kca communication">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kca.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>육상무선통신사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 08. 10.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info" style="letter-spacing: -1px;">한국방송통신전파진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0105</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 kdata data">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kdata.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>SQL 개발자</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 07. 07.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국데이터산업진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****9843</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk web">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="line-height: 18px;">웹디자인기능사<br><small style="font-size: 70%">(현. 웹디자인개발기능사)</small></h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 07. 05.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****361R</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 kdata data">
+                    <div class="cert-image">
+                        <img src="static/img/cert/kdata.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>데이터 분석 준전문가</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 06. 16.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국데이터산업진흥원</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****8415</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 hrdk sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>정보처리산업기사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 06. 09.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****701D</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ybm sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/cospro.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>COS PRO Java 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 06. 03.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">YBM</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****7245</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ybm sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/cospro.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>COS PRO C 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 05. 20.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">YBM</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1203</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ybm sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/cospro.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>COS PRO C++ 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 05. 06.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">YBM</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****0146</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ts rail">
+                    <div class="cert-image">
+                        <img src="static/img/cert/ts.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>철도교통안전관리자</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 04. 25.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국교통안전공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1298</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 ybm sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/cospro.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3 style="letter-spacing: -1px;">COS PRO Python 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 04. 22.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">YBM</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****3500</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2023 kpc design">
+                    <div class="cert-image">
+                        <img src="static/img/cert/gtq.jpg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>GTQ일러스트 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2023. 01. 13.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****3725</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2022 hyundai sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hyundai.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>HSAT Level 3</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2022. 12. 20.<br><small>만료일 2024. 12. 20.</small></h5>
+                    <p class="cert-stat-title">인증기관</p>
+                    <h5 class="cert-stat-info">현대엔지비</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****-015</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2022 kpc design">
+                    <div class="cert-image">
+                        <img src="static/img/cert/gtq.jpg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>GTQ 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2022. 09. 16.<br><small>만료일 2027. 09. 16.</small></h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****6818</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2022 kait hw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/linux2.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>리눅스마스터 2급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2022. 04. 01.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국정보통신진흥협회</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1387</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2022 atc design">
+                    <div class="cert-image">
+                        <img src="static/img/cert/atc1.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ATC캐드마스터 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2022. 03. 11.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국ATC센터</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1002</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2021 hrdk hw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>정보기기운용기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2021. 12. 24.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****215Q</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2021 kcci oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/korcham.jpeg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>컴퓨터활용능력 1급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2021. 02. 12.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">대한상공회의소</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****9695</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2021 icqa hw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/icqa.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>네트워크관리사 2급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2021. 01. 14.<br><small>만료일 2026. 01. 13.</small></h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국정보통신자격협회</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****4384</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2020 hrdk sw">
+                    <div class="cert-image">
+                        <img src="static/img/cert/hrdk.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>정보처리기능사</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2020. 10. 18.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국산업인력공단</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****353W</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2020 kcci oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/korcham.jpeg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>워드프로세서</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2020. 06. 19.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">대한상공회의소</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****9061</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2020 kcci oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/korcham.jpeg">
+                    </div>
+                    <div class="cert-name">
+                        <h3>컴퓨터활용능력 2급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2020. 05. 29.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">대한상공회의소</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****4624</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2019 atc design">
+                    <div class="cert-image">
+                        <img src="static/img/cert/atc1.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ATC캐드마스터 2급</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">2019. 02. 22.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국ATC센터</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****1045</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2013 kpc oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/itq.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ITQ 인터넷</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">A등급 2013. 02. 21.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****6133</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2012 kpc oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/itq.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ITQ 한글엑셀</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">A등급 2012. 08. 02.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****6133</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2010 kpc oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/itq.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ITQ 아래한글</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">A등급 2010. 12. 30.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****6133</h5>
+                </div>
+                <div class="cert-wide" cert-filter="2010 kpc oa">
+                    <div class="cert-image">
+                        <img src="static/img/cert/itq.png">
+                    </div>
+                    <div class="cert-name">
+                        <h3>ITQ 파워포인트</h3>
+                    </div>
+                    <p class="cert-stat-title">취득일시</p>
+                    <h5 class="cert-stat-info">A등급 2010. 07. 06.</h5>
+                    <p class="cert-stat-title">주관기관</p>
+                    <h5 class="cert-stat-info">한국생산성본부</h5>
+                    <p class="cert-stat-title">자격번호</p>
+                    <h5 class="cert-stat-info">****6133</h5>
+                </div>
+            </div>
+
+            <h2 class="subtitles">연락처</h2>
+            <p class="contact-simple-text">
+                연락은 문자/전화 또는 메일로 부탁드립니다.
+                <br> <i class="fass fa-solid fa-phone"></i> 010-9626-6362
+                <br> <i class="fass fa-solid fa-envelope"></i> rbkim@sui.kr
+            </p>
+            <div class="social-wrap">
+                <a class="social-item social-phone" href="tel:010-9626-6362" target="_blank">
+                    <span><i class="fass fa-solid fa-phone"></i></span>
+                </a>
+                <a class="social-item social-mail" href="mailto:rbkim@sui.kr" target="_blank">
+                    <span><i class="fass fa-solid fa-envelope"></i></span>
+                </a>
+            </div>
+
+            <h2 class="subtitles">Social</h2>
+            <div class="social-wrap">
+                <a class="social-item social-gh" href="https://github.com/DetegiCE" target="_blank">
+                    <span><i class="fass fa-brands fa-github"></i></span>
+                </a>
+                <a class="social-item social-fb" href="https://www.facebook.com/profile.php?id=100007918114049"
+                    target="_blank">
+                    <span><i class="fass fa-brands fa-facebook"></i></span>
+                </a>
+                <a class="social-item social-ins" href="https://www.instagram.com/detegice/" target="_blank">
+                    <span><i class="fass fa-brands fa-instagram"></i></span>
+                </a>
+            </div>
+            <hr>
+
+            <footer class="footer">
+                <p class="copyright">&copy; 2022 - <span id="currentYear"></span>. Ryubin Kim (
+                    <!-- <a href="./rhythm.html" data-content="SUI Sensei™" class="glitch-text-link"> -->
+                    SUI Sensei™
+                    <!-- </a> -->
+                    ) All rights reserved.
+                </p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        $(function () {
+            $("dt").click(function () {
+                $(this).toggleClass("open");
+                if ($(this).hasClass("open"))
+                    $("dt").not(this).removeClass("open");
+            })
+        })
+    </script>
+</body>
+
+</html>
