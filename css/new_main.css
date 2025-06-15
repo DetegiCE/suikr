@@ -288,7 +288,7 @@ section {
         position: relative;
         right: auto;
         justify-content: flex-end;
-        font-size: 60%;
+        font-size: 4vh;
     }
 
     #main #introduce > p {
