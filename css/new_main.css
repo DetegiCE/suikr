@@ -109,14 +109,6 @@ section {
     transform-origin: center center;
 }
 
-#menu {
-    padding: 0.6rem;
-}
-
-#menu:hover {
-    padding: 0.8rem;
-}
-
 #main {
     background-color: antiquewhite;
     display: flex;
@@ -241,6 +233,13 @@ section {
 
 
 @media (orientation: portrait) {
+    #menu {
+        padding: 0.6rem;
+    }
+
+    #menu:hover {
+        padding: 0.8rem;
+    }
 
     #menu-main::before {
         font-family: 'Font-Awesome-Solid';
@@ -276,7 +275,7 @@ section {
     #main #photo {
         position: relative;
         left: auto;
-        height: auto;
+        height: 50%;
     }
 
     #main #photo img {
@@ -289,7 +288,7 @@ section {
         position: relative;
         right: auto;
         justify-content: flex-end;
-        font-size: 120%;
+        font-size: 60%;
     }
 
     #main #introduce > p {

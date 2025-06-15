@@ -114,6 +114,37 @@
             }, 1000);
         });
 
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        window.addEventListener("touchstart", function(e) {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+
+        window.addEventListener("touchend", function(e) {
+            touchEndY = e.changedTouches[0].screenY;
+            handleTouchScroll();
+        });
+
+        function handleTouchScroll() {
+            if (isScrolling) return;
+            isScrolling = true;
+
+            const deltaY = touchStartY - touchEndY;
+
+            if (deltaY > 50 && currentSection < sections.length - 1) {
+                currentSection++;
+            } else if (deltaY < -50 && currentSection > 0) {
+                currentSection--;
+            }
+
+            sections[currentSection].scrollIntoView({ behavior: "smooth" });
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 1000);
+        }
+
         
         (function() {
         var Flip;
