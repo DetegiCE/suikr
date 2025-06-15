@@ -50,6 +50,31 @@ section {
     z-index: 10;
 }
 
+#menu-main::before {
+    font-family: initial;
+    content: '소개';
+}
+
+#menu-history::before {
+    font-family: 'Pretendard-Regular';
+    content: '이력';
+}
+
+#menu-award::before {
+    font-family: 'Pretendard-Regular';
+    content: '수상';
+}
+
+#menu-license::before {
+    font-family: 'Pretendard-Regular';
+    content: '자격증';
+}
+
+#menu-contact::before {
+    font-family: 'Pretendard-Regular';
+    content: '연락처';
+}
+
 #menu {
     display: flex;
     align-items: center;
@@ -84,65 +109,12 @@ section {
     transform-origin: center center;
 }
 
-@media (max-width: 720px) {
-    #menu {
-        padding: 0.6rem;
-    }
-    #menu:hover {
-        padding: 0.8rem;
-    }
-
-    #menu-main::before {
-        font-family: 'Font-Awesome-Solid';
-        content: '\f015';
-    }
-
-    #menu-history::before {
-        font-family: 'Font-Awesome-Solid';
-        content: '\f46d';
-    }
-
-    #menu-award::before {
-        font-family: 'Font-Awesome-Solid';
-        content: '\f559';
-    }
-
-    #menu-license::before {
-        font-family: 'Font-Awesome-Solid';
-        content: '\f2c2';
-    }
-
-    #menu-contact::before {
-        font-family: 'Font-Awesome-Solid';
-        content: '\f095';
-    }
+#menu {
+    padding: 0.6rem;
 }
 
-@media (min-width: 720px) {
-    #menu-main::before {
-        font-family: initial;
-        content: '소개';
-    }
-
-    #menu-history::before {
-        font-family: 'Pretendard-Regular';
-        content: '이력';
-    }
-
-    #menu-award::before {
-        font-family: 'Pretendard-Regular';
-        content: '수상';
-    }
-
-    #menu-license::before {
-        font-family: 'Pretendard-Regular';
-        content: '자격증';
-    }
-
-    #menu-contact::before {
-        font-family: 'Pretendard-Regular';
-        content: '연락처';
-    }
+#menu:hover {
+    padding: 0.8rem;
 }
 
 #main {
@@ -269,6 +241,32 @@ section {
 
 
 @media (orientation: portrait) {
+
+    #menu-main::before {
+        font-family: 'Font-Awesome-Solid';
+        content: '\f015';
+    }
+
+    #menu-history::before {
+        font-family: 'Font-Awesome-Solid';
+        content: '\f46d';
+    }
+
+    #menu-award::before {
+        font-family: 'Font-Awesome-Solid';
+        content: '\f559';
+    }
+
+    #menu-license::before {
+        font-family: 'Font-Awesome-Solid';
+        content: '\f2c2';
+    }
+
+    #menu-contact::before {
+        font-family: 'Font-Awesome-Solid';
+        content: '\f095';
+    }
+
     #main {
         display: flex;
         flex-direction: column-reverse;
