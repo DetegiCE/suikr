@@ -160,7 +160,7 @@ section {
 }
 
 #main #photo img {
-    height: 720px;
+    height: 80%;
 }
 
 #main #introduce {
@@ -265,6 +265,57 @@ section {
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
 }
+
+
+@media (orientation: portrait) {
+    #main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #main #photo {
+        position: relative;
+        left: auto;
+        height: auto;
+    }
+
+    #main #photo img {
+        height: 90%;
+    }
+
+    #main #introduce {
+        align-items: center;
+        text-align: center;
+        position: relative;
+        right: auto;
+        justify-content: flex-end;
+        font-size: 120%;
+    }
+
+    #main #introduce > p {
+        text-align: center;
+    }
+
+    #flip {
+        text-align: center;
+        width: 1200px;
+    }
+
+    #flip span {
+        left: 600px;
+        translate: -50% 0%;
+    }
+
+    #menu-container {
+        height: 80px;
+    }
+
+    #menu {
+        font-size: 150%;
+    }
+}
+
 
 .inklipquid {
     font-family: 'InkLipquid';
