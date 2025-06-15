@@ -275,7 +275,6 @@ section {
     #main #photo {
         position: relative;
         left: auto;
-        height: 50%;
     }
 
     #main #photo img {
@@ -288,7 +287,7 @@ section {
         position: relative;
         right: auto;
         justify-content: flex-end;
-        font-size: 4vh;
+        font-size: 3vh;
     }
 
     #main #introduce > p {
@@ -306,11 +305,15 @@ section {
     }
 
     #menu-container {
-        height: 80px;
+        height: 180px;
     }
 
     #menu {
-        font-size: 150%;
+        font-size: 300%;
+    }
+
+    #menu .menu-item {
+        width: 160px;
     }
 }
 
