@@ -147,6 +147,7 @@ section {
 #main {
     background-color: antiquewhite;
     display: flex;
+    align-items: flex-end;
 }
 
 #main #photo {
@@ -154,6 +155,8 @@ section {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    position: absolute;
+    left: 50px;
 }
 
 #main #photo img {
@@ -161,9 +164,13 @@ section {
 }
 
 #main #introduce {
+    text-align: right;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     height: 70%;
-    padding-top: 200px;
-    text-align: center;
 }
 
 #main #introduce > p {
@@ -175,6 +182,7 @@ section {
     font-family: 'inkLipquid';
     font-size: 150%;
 }
+
 
 #history {
     background-color: gainsboro;
@@ -226,7 +234,7 @@ section {
 
 #flip {
     display: inline-block;
-    width: 1000px;
+    width: 500px;
     height: 48px;
     position: relative;
     top: 0px;
@@ -243,8 +251,7 @@ section {
     transform: rotateX(90deg);
     position: absolute;
     top: -24px;
-    left: 500px;
-    translate: -50% 0%;
+    right: 0px;
 }
 #flip span.set {
     top: 0;
