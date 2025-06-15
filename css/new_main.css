@@ -15,6 +15,13 @@
     src: url('/static/font/fa-solid-900.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     font-family: 'Pretendard-Regular';
     margin: 0;
@@ -160,7 +167,13 @@ section {
 }
 
 #main #introduce > p {
-    text-align: center;
+    text-align: right;
+    margin: 10px 0px;
+}
+
+#introduce-1 {
+    font-family: 'inkLipquid';
+    font-size: 150%;
 }
 
 #history {
@@ -244,4 +257,8 @@ section {
     opacity: 0;
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
+}
+
+.inklipquid {
+    font-family: 'InkLipquid';
 }
