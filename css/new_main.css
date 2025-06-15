@@ -148,10 +148,244 @@ section {
     font-size: 150%;
 }
 
-
 #history {
-    background-color: gainsboro;
+    background-color: cornsilk;
 }
+
+.history-title {
+    margin: 0;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.history-title:first-child {
+    padding-top: 72px;
+}
+
+.history-title:nth-of-type(2) {
+    padding-top: 24px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#history-megasw::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/megait.png');
+	background-size: 300px;
+	background-position: center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-megasw:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+
+#history-koreait::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/koreait.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-koreait:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+
+#history-sbsarts::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/sbsarts.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-sbsarts:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+#history-daekun::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/daekun.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-daekun:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+#history-megait::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/megait.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-megait:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+#history-unitstudy::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/unit.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-unitstudy:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+
+#history-kitpa::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/kitpa_new.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-kitpa:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+#history-smcnc::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/smcnc.png');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-smcnc:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+#history-ridi::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+    background-color: white;
+	background-image: url('/static/img/ridi.jpg');
+	background-size: 300px;
+	background-position: center center;
+    background-repeat: no-repeat;
+	filter: blur(3px) brightness(100%);
+}
+
+#history-ridi:hover::after {
+    background-size: 400px;
+	filter: blur(8px) brightness(110%);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+.card {
+    z-index: 5;
+    position: relative;
+    border-radius: 16px;
+    background-position: center;
+    background-color: white;
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 30px -12px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+
+.card-content {
+	position: relative;
+    z-index: 2;
+	padding: 1.5rem;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease;
+}
+
+.card h2 {
+	font-size: 1.5rem;
+        margin-top: 0;
+	margin-bottom: 0.75rem;
+	font-weight: 700;
+	transform: translateZ(20px);
+    color: #050505;
+}
+
+.card p {
+    color: #050505;
+	margin-bottom: 0;
+	font-size: 0.9rem;
+	opacity: 0.8;
+	transform: translateZ(15px);
+}
+
 
 #award {
     background-color: honeydew;
@@ -314,6 +548,20 @@ section {
 
     #menu .menu-item {
         width: 160px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-content {
+        position: relative;
+        z-index: 2;
+        padding: 1rem;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease;
     }
 }
 
